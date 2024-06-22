@@ -87,9 +87,16 @@ class Main{
     public static void opcion2(Scanner scanner) {
         System.out.println("Opción 2 seleccionada: Agregar 5 estudinates.");
 
+        // Pedir al usuario que seleccione la operación
+        System.out.println("¿Quieres agregar los estudiantes?");
+        System.out.println("1. si");
+        System.out.println("2. no");
+        System.out.print("Selecciones 1 o 2: ");
+        int opcion2 = scanner.nextInt();
 
         System.out.print("Ingrese el primer estudiante: ");
-        double estudiante1 = scanner.nextDouble();
+        int estudiante1 = (int) (int) scanner.nextInt();
+
         System.out.print("Ingrese su nota: ");
         double nota1 = scanner.nextDouble();
 
@@ -112,6 +119,21 @@ class Main{
         double estudiante5 = scanner.nextDouble();
         System.out.print("Ingrese su nota: ");
         double nota5 = scanner.nextDouble();
+
+
+        switch (opcion2) {
+            case 1:
+                double suma = estudiante1 + estudiante2 + estudiante3 + estudiante4 + estudiante5;
+                System.out.println("El resultado de la suma es: " + suma);
+                break;
+            case 2:
+
+                System.out.println("Gracias por su tiempo.");
+                break;
+            default:
+                System.out.println("Opción no válida. Por favor, seleccione una operación del 1 al 4.");
+                break;
+        }
 
     }
 }
