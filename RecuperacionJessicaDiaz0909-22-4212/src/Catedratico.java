@@ -20,7 +20,7 @@ class Main{
                         opcion1(scanner);
                         break;
                     case 2:
-                        opcion2();
+                        opcion2(scanner);
                         break;
                     case 3:
                         System.out.println("Saliendo...");
@@ -84,31 +84,34 @@ class Main{
         }
     }
 
-    public static void opcion2() {
-        // Implementación de la opción 2
-    }
-}
+    public static void opcion2(Scanner scanner) {
+        System.out.println("Opción 2 seleccionada: Agregar 5 estudinates.");
 
-public class Catedratico {
-    void Nombre() {
-        System.out.println("Juan Pablo");
-    }
-    void Carrera(){
-        System.out.println("Ingenieria en Sistema");
-    }
-    void Edad(){
 
-    }
-    public class Name {
+        System.out.print("Ingrese el primer estudiante: ");
+        double estudiante1 = scanner.nextDouble();
+        System.out.print("Ingrese su nota: ");
+        double nota1 = scanner.nextDouble();
 
-    }
-    public class Main {
+        System.out.print("Ingrese el segundo estudiante: ");
+        double estudiante2 = scanner.nextDouble();
+        System.out.print("Ingrese su nota: ");
+        double nota2 = scanner.nextDouble();
 
-    }
-    public class Edad{
+        System.out.print("Ingrese el tercer estudiante: ");
+        double estudiante3 = scanner.nextDouble();
+        System.out.print("Ingrese su nota: ");
+        double nota3 = scanner.nextDouble();
 
-    }
-    private class Nombre {
+        System.out.print("Ingrese el cuarto estudiante: ");
+        double estudiante4 = scanner.nextDouble();
+        System.out.print("Ingrese su nota: ");
+        double nota4 = scanner.nextDouble();
+
+        System.out.print("Ingrese el quinto estudiante: ");
+        double estudiante5 = scanner.nextDouble();
+        System.out.print("Ingrese su nota: ");
+        double nota5 = scanner.nextDouble();
 
     }
 }
